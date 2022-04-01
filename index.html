@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lise Boutier</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-white">
+
+    <div class="fixed w-full">
+        <div class="grid grid-cols-4 flex flex-row py-8">
+            <div class="flex flex-row col-start-1">
+                <p class="px-6">Lise Boutier</p>
+            </div>
+
+            <div class="col-end-6 col-span-2 flex justify-end">
+                <a href="#home" class="px-6 hover:line-through hover:decoration-2">Home</a>
+                <a href="#projet" class="px-6 hover:line-through hover:decoration-2">Pojects</a>
+                <a href="#contact" class="px-6 hover:line-through hover:decoration-2">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div id="home" class="bg-black w-full h-screen bg-[url('feuilles.jpg')] backdrop-blur-3xl">
+        <div>
+            <h1 class="text-9xl font-black absolute bottom-10 left-5">Learning <br> Web <br> Developer</h1>
+        </div>
+        <div class="absolute inset-y-2/3 right-10 w-2/5 font-bold text-lg">
+            <p>I am an aspiring web developer based in Rennes, France. I love creating interactive and aesthetic
+                websites.
+                Curently learning JavaScript, Vue.JS, PHP and Python. I love litterature, plants, puzzles and video
+                games</p>
+        </div>
+    </div>
+
+    <div id="projet" class=" h-screen w-full bg-black pt-20 grid gap-y-16">
+
+        <div class="flex flex-row justify-center">
+            <div data-modal-toggle="defaultModal" type="button"
+                class="bg-[url('hedy.PNG')] h-80 bg-cover w-1/3 hover:blur-sm hover:transition hover:ease-in-out hover:delay-150">
+
+
+                <div id="defaultModal" tabindex="-1" aria-hidden="true"
+                    class="hidden overflow-y-auto bg-black overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
+                    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+
+                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+
+                            <div class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
+                                <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
+                                    Hedy Lammar
+                                </h3>
+
+                            </div>
+
+                            <div class="p-6 space-y-6">
+                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                    A website created in tribute to actress and inventor Heidy Lammar.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-end-3 grid place-content-center px-8">
+                <h3 class="text-4xl font-black">Hedy <br> Lammar</h3>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-center">
+            <div class="grid place-content-center px-8">
+                <h3 class="text-4xl font-black text-right">Banshee <br> Media</h3>
+
+            </div>
+            <div data-modal-toggle="modal" type="button"
+                class="bg-[url('banshee.PNG')] h-80 bg-cover w-1/3 hover:blur-sm hover:transition hover:ease-in-out hover:delay-150">
+
+
+                <div id="modal" tabindex="-1" aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
+                    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+
+                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+
+                            <div class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
+                                <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
+                                    Banshee Media
+                                </h3>
+
+                            </div>
+
+                            <div class="p-6 space-y-6">
+                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                    A weekly blog. Speaks about lgbtqia+ and feminism subjects across medias representation and various area of life.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact" class="h-3/5 w-full bg-black grid grid-rows-2 gap-4 place-content-center relative">
+
+
+        <h5 class="text-9xl font-black absolute bottom-10 left-5 ">Contact <br> Me</h5>
+
+        <div class="absolute bottom-12 left-1/4 w-2/5 font-medium text-md flex  space-x-32">
+
+            <a href="mailto:lise.boutier@gmail.com" class="border p-4 px-8 rounded-3xl hover:opacity-50 hover:transition hover:ease-in-out hover:delay-150">Mail</a>
+            <a href="https://www.linkedin.com/in/lise-boutier/" class="border p-4 px-6 rounded-3xl hover:opacity-50 hover:transition hover:ease-in-out hover:delay-150">Linkedin</a>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+        }
+    }
+</script>
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+
+</html>
